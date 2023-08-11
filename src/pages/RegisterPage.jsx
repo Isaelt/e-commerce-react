@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import useAuth from "../hooks/useAuth";
 import { useNavigate } from "react-router-dom";
+import './styles/RegisterPage.css'
 
 const RegisterPage = () => {
 
@@ -20,29 +21,31 @@ const RegisterPage = () => {
    }
 
   return (
-    <form onSubmit={handleSubmit(submit)}>
-      <div>
-        <label htmlFor="firstname">First Name</label>
-        <input {...register('firstName')} type="text" id="firstname" />
+    <div className="register__container">
+    <form className="register__form" onSubmit={handleSubmit(submit)}>
+      <div className="register__name">
+        <label className="register__label" htmlFor="firstname">First Name</label>
+        <input className="register__input" {...register('firstName')} type="text" id="firstname" />
       </div>
-      <div>
-        <label htmlFor="lastname">Last Name</label>
-        <input {...register('lastName')} type="text" id="lastname" />
+      <div className="register__name">
+        <label className="register__label" htmlFor="lastname">Last Name</label>
+        <input className="register__input" {...register('lastName')} type="text" id="lastname" />
       </div>
-      <div>
-        <label htmlFor="email">Email</label>
-        <input {...register('email')} type="email" id="email" />
+      <div className="register__name">
+        <label className="register__label" htmlFor="email">Email</label>
+        <input className="register__input" {...register('email')} type="email" id="email" />
       </div>
-      <div>
-        <label htmlFor="password">Password</label>
-        <input {...register('password')} type="password" id="password" />
+      <div className="register__name">
+        <label className="register__label" htmlFor="password">Password</label>
+        <input className="register__input" {...register('password')} type="password" id="password" />
       </div>
-      <div>
-        <label htmlFor="phone">Phone</label>
-        <input {...register('phone')} type="text" id="phone" />
+      <div className="register__name">
+        <label className="register__label" htmlFor="phone">Phone</label>
+        <input className="register__input" {...register('phone')} type="text" id="phone" />
       </div>
-      <button>Create User</button>
+      <button className="register__btn">Create User</button>
     </form>
+    </div>
   );
 };
 

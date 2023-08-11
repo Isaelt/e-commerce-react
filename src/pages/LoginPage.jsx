@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import useAuth from "../hooks/useAuth";
 import { useNavigate } from "react-router-dom";
+import './styles/LoginPage.css'
 
 const LoginPage = () => {
 
@@ -13,17 +14,19 @@ const LoginPage = () => {
     }
 
   return (
-    <form onSubmit={handleSubmit(submit)}>
-      <div>
-        <label htmlFor="email">Email</label>
-        <input {...register('email')} type="email" id="email" />
+    <div className="login__container">
+    <form className="login__form" onSubmit={handleSubmit(submit)}>
+      <div className="login__field">
+        <label className="login__label" htmlFor="email">Email</label>
+        <input className="login__input" {...register('email')} type="email" id="email" />
       </div>
-      <div>
-        <label htmlFor="password">Password</label>
-        <input {...register('password')} type="password" id="password" />
+      <div className="login__field">
+        <label className="login__label" htmlFor="password">Password</label>
+        <input className="login__input" {...register('password')} type="password" id="password" />
       </div>
-      <button>Login</button>
+      <button className="login__btn">Login</button>
     </form>
+    </div>
   );
 }
 
