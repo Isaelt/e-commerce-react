@@ -1,0 +1,6 @@
+.purchases__container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 1em;
+}

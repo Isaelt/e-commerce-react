@@ -1,0 +1,10 @@
+.category__title{
+    display: flex;
+}
+.category__list{
+    cursor: pointer;
+    padding: .5em;
+}
+.category__item{
+    padding: .2em;
+}

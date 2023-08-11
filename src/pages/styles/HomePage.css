@@ -1,0 +1,39 @@
+.home__container{
+    display: flex;
+    flex-direction: column;
+}
+.home__contain-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+.home__input-filtername{
+    border: 1px solid #dcd9d9;
+    font-size: 1.1rem;
+    padding: .8em;
+    height: 1.8em;
+}
+
+.home__btn-search{
+    background: #f85555;
+    border: none;
+    color: #fff;
+    font-size: 1.1rem;
+    height: 1.8em;
+    width: 1.8em;
+}
+.home__container-products{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    justify-content: center;
+}
+.home__divisor{
+    display: flex;
+    margin-left: 1em;
+}
+.home__filters{
+    display: flex;
+    gap: 1.5em;
+}

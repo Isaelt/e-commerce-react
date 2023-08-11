@@ -1,0 +1,11 @@
+.similar__contain{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+}
+.similar__name{
+    text-align: center;
+    margin: 1em;
+}
