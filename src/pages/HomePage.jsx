@@ -21,8 +21,6 @@ const HomePage = () => {
       setNameValue(inputName.current.value)
     }
 
-    console.log(nameValue)
-
     const cbFilter = prod => {
       //filter by name
       const inputNameLower = nameValue.toLowerCase().trim()
@@ -32,6 +30,8 @@ const HomePage = () => {
       const filterPrice = fromTo.from <= price && price <= fromTo.to
       return nameReal.includes(inputNameLower) && filterPrice
     } 
+
+
 
     return (
     <div className="home__container">
@@ -43,14 +43,15 @@ const HomePage = () => {
         value={nameValue}
         placeholder="What are you looking for?"
         />
-        <button className="home__btn-search"><i class='bx bx-search'></i></button>
+        <button className="home__btn-search"><i className='bx bx-search'></i></button>
       </div>
       <div className="home__divisor">
         <div className="home__filters">
-       <FilterCategory />
        <FilterPrice 
        setFromTo={setFromTo}
        />
+       <FilterCategory
+      />
         </div>
         <div className="home__container-products">
             {

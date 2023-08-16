@@ -11,6 +11,8 @@ const CardProduct = ({ product }) => {
     navigate(`/product/${product.id}`);
   };
 
+  console.log(product)
+
   const handleAddCart = (e) => {
     e.stopPropagation()
     const data = {

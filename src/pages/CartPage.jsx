@@ -8,6 +8,7 @@ import './styles/CartPage.css'
 const CartPage = () => {
 
     const cart = useSelector(reducer => reducer.cart)
+    console.log(cart)
 
     const dispatch = useDispatch()
 
@@ -15,9 +16,6 @@ const CartPage = () => {
        dispatch(getCartThunk())
     },[])
     
-
-    console.log(cart)
-
     const totalAmount = cart.reduce((acc, cv) => {
       const subtotal = cv.quantity * cv.product.price
       return acc + subtotal

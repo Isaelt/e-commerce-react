@@ -8,6 +8,7 @@ const ProductInCart = ({ prodCart }) => {
     const handleDeleteCart = () => {
         deleteProductInCart(prodCart.id)
     }
+    console.log(prodCart)
 
   return (
     <article className="incart__container">

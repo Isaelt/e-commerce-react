@@ -17,6 +17,7 @@ const LoginPage = () => {
     <div className="login__container">
     <form className="login__form" onSubmit={handleSubmit(submit)}>
       <div className="login__field">
+        <p className="login__paragraph">Please, enter your email and password to continue.</p>
         <label className="login__label" htmlFor="email">Email</label>
         <input className="login__input" {...register('email')} type="email" id="email" />
       </div>

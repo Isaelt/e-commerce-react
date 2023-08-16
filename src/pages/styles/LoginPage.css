@@ -1,7 +1,7 @@
 .login__container{
     width: 100%;
     min-height: 100vh;
-    background-color: #0003;
+    background: hsla(0,1%,72%,.1);
     position: fixed;
     display: flex;
     justify-content: center;
@@ -43,4 +43,8 @@
    color: aliceblue;
    border-radius: 0.5em;
    margin-top: 1em;
+}
+.login__paragraph{
+    font-size: 1.3rem;
+    margin-bottom: .8em;
 }

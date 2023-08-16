@@ -6,6 +6,11 @@
     justify-content: center;
 }
 .similar__name{
+    color: #f85555;
     text-align: center;
-    margin: 1em;
+    margin: 2em;
+}
+
+.similar__container{
+    margin-bottom: 1em;
 }

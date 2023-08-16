@@ -2,7 +2,7 @@
     padding-top:.5em ;
 }
 .price__from{
-    padding: .5em;
+    padding: .3em;
 }
 .price__input{
     border: 1px solid #dcd9d9;
@@ -17,4 +17,22 @@
     font-size: 1.1rem;
     height: 1.3em;
     width: 6em;
+    border-radius: 5px;
+}
+.price__title{
+    border-bottom: 2px solid #dcd9d9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.price__container.closed {
+    max-height: 40px;
+}
+.price__container {
+    margin-bottom: 10px;
+    max-height: 300px;
+    overflow: hidden;
+    transition: all .7s;
 }

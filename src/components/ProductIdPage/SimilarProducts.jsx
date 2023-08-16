@@ -19,7 +19,7 @@ const SimilarProducts = ({product}) => {
   }
 
   return (
-    <div>
+    <div className="similar__container">
       <h3 className="similar__name">Similar Products</h3>
       <div className="similar__contain">
         {

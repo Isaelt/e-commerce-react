@@ -1,10 +1,25 @@
-.category__title{
-    display: flex;
-}
 .category__list{
     cursor: pointer;
     padding: .5em;
 }
 .category__item{
     padding: .2em;
+}
+.categoty__contain.closed__cat{
+    overflow: hidden;
+    transition: all 1s;
+    
+}
+.category__contain.closed__cat {
+    max-height: 38px;
+}
+.category__contain {
+    margin-bottom: 10px;
+    max-height: 300px;
+    overflow: hidden;
+    transition: all 1s;
+}
+.rotate{
+    transform: rotate(180deg);
+    transition: all 1.4s;
 }

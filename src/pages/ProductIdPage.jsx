@@ -20,6 +20,7 @@ const ProductIdPage = () => {
 
   return (
     <div>
+      <div className="product__slider-info">
       <div className="slider__center">
         <SliderImgs
         product={product}
@@ -29,6 +30,7 @@ const ProductIdPage = () => {
         <ProductInfo
         product={product}
         />
+      </div>
         <SimilarProducts
         product={product}
         />

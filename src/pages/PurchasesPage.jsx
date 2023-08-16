@@ -10,7 +10,6 @@ const PurchasesPage = () => {
    useEffect(()=> { 
     getAllPurchases()
    },[])
-
    console.log(purchases)
 
   return (

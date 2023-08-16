@@ -23,6 +23,7 @@ const RegisterPage = () => {
   return (
     <div className="register__container">
     <form className="register__form" onSubmit={handleSubmit(submit)}>
+      <h2 className="register__paragraph">Enter your details to create an account</h2>
       <div className="register__name">
         <label className="register__label" htmlFor="firstname">First Name</label>
         <input className="register__input" {...register('firstName')} type="text" id="firstname" />

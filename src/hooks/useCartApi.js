@@ -20,7 +20,7 @@ const useCartApi = () => {
           })
          .catch(err => console.log(err))
     }
-    //DELETE
+    //DELETE 
     const deleteProductInCart = (id) => {
       const url = `${baseUrl}/cart/${id}`
       axios.delete(url, getConfigToken())
@@ -32,7 +32,17 @@ const useCartApi = () => {
        .catch(err => console.log(err))
     }
 
-  return{ addProductInCart, deleteProductInCart}
+    //UPDATE
+    const updateProductInCart = (id, data) => {
+      const url = `${baseUrl}/cart/${id}`
+      axios.put(url, data, getConfigToken())
+       .then(res => {
+        console.log(res.data)
+       })
+       .catch(err => console.log(err))
+    }
+
+  return{ addProductInCart, deleteProductInCart, updateProductInCart}
 }
 
 export default useCartApi

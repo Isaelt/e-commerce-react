@@ -1,9 +1,11 @@
 import { useForm } from "react-hook-form";
 import './styles/FilterPrice.css'
+import { useState } from "react";
 
 const FilterPrice = ({ setFromTo }) => {
 
     const { register, reset, handleSubmit } = useForm()
+    const [rotateIcon, setRotateIcon] = useState()
 
     const submit = data => {
         const from = Number(data.from.trim())
@@ -14,10 +16,21 @@ const FilterPrice = ({ setFromTo }) => {
          }
          setFromTo(obj)
     }
+    const [closeFilter, setCloseFilter] = useState()
+
+    const handleClosePrice = () => {
+      if (closeFilter=='closed') {
+        setCloseFilter('open')
+        setRotateIcon('rotate')
+      } else {
+        setCloseFilter('closed')
+        setRotateIcon()
+      }
+    }
 
   return (
-    <article className="price__container">
-      <h3 className="price__title">Price <i class='bx bxs-chevron-down'></i></h3>
+    <article className={`price__container ${closeFilter}`}>
+      <h3 onClick={handleClosePrice} className="price__title">Price <i className={`bx bxs-chevron-down ${rotateIcon}`}></i></h3>
       <form className="price__form" onSubmit={handleSubmit(submit)}>
         <div className="price__from">
           <label htmlFor="from">From</label>
