@@ -30,7 +30,7 @@ function App() {
       <Route path='/product/:id' element={<ProductIdPage/>}/>
       {/* <Route element={<ProtectedRoutes />}> */}
         <Route path='/cart' element={<CartPage/>}/>
-        <Route path='/purchases' element={<PurchasesPage/>}/>
+        {/* <Route path='/purchases' element={<PurchasesPage/>}/> */}
       {/* </Route> */}
      </Routes>
     </div>
