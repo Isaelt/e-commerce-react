@@ -11,7 +11,7 @@ const usePurchases = () => {
 
   const dispatch = useDispatch()
 
-  const url = 'https://e-commerce-api-v2.academlo.tech/api/v1/purchases'
+  const url = ''
    //POST
   const makeAPurchase = () => {
     axios.post(url, {}, getConfigToken())

@@ -3,7 +3,7 @@ import { useState } from "react"
 
 const useFetch = () => {
 
-  const baseUrl = 'https://e-commerce-api-v2.academlo.tech/api/v1'
+  const baseUrl = ''
 
   const [infoApi, setInfoApi] = useState()
   

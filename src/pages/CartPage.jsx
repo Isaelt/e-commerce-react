@@ -13,10 +13,10 @@ const CartPage = () => {
     const dispatch = useDispatch()
 
     useEffect(() => {
-       dispatch(getCartThunk())
+      //  dispatch(getCartThunk())
     },[])
     
-    const totalAmount = cart.reduce((acc, cv) => {
+    const totalAmount = cart.products?.reduce((acc, cv) => {
       const subtotal = cv.quantity * cv.product.price
       return acc + subtotal
     }, 0)
@@ -32,7 +32,7 @@ const CartPage = () => {
         <h2>Cart</h2>
         <div className="cart__container">
           {
-            cart.map(prod => (
+            cart.products?.map(prod => (
                 <ProductInCart 
                 key={prod.id}
                 prodCart={prod}

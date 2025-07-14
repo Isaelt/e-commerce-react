@@ -14,19 +14,23 @@ const CardProduct = ({ product }) => {
   console.log(product)
 
   const handleAddCart = (e) => {
-    e.stopPropagation()
-    const data = {
-      quantity: 1,
-      productId: product.id
-    }
-    addProductInCart(data)
+    e.stopPropagation();
+    // const data = {
+    //   quantity: 1,
+    //   productId: product.id
+    // }
+    // addProductInCart(data)
+
+    // const data = { userId: 1, products: [{ id: product.id }] };
+    addProductInCart(product);
+    alert('Producto agregado correctamente');
   };
 
   return (
     <article className="card" onClick={handleNavigate}>
       <header className="card__header">
-        <img className="card__img card__img1" src={product.images[0].url} alt="" />
-        <img className="card__img card__img2" src={product.images[1].url} alt="" />
+        <img className="card__img card__img1" src={product.image} alt="" />
+        <img className="card__img card__img2" src={product.image} alt="" />
       </header>
       <section className="card__body">
         <header className="card__body__header">

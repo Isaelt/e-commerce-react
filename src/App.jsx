@@ -28,11 +28,10 @@ function App() {
       <Route path='/register' element={<RegisterPage/>}/>
       <Route path='/login' element={<LoginPage/>}/>
       <Route path='/product/:id' element={<ProductIdPage/>}/>
-
-      <Route element={<ProtectedRoutes />}>
+      {/* <Route element={<ProtectedRoutes />}> */}
         <Route path='/cart' element={<CartPage/>}/>
         <Route path='/purchases' element={<PurchasesPage/>}/>
-      </Route>
+      {/* </Route> */}
      </Routes>
     </div>
   )

@@ -5,15 +5,16 @@ const ProductInCart = ({ prodCart }) => {
 
     const { deleteProductInCart } = useCartApi()
 
+
     const handleDeleteCart = () => {
-        deleteProductInCart(prodCart.id)
+        deleteProductInCart(prodCart.product.id)
     }
     console.log(prodCart)
 
   return (
     <article className="incart__container">
         <header className="incart__header">
-            <img className="incart__img" src={prodCart.product.images[0].url} alt="" />
+            <img className="incart__img" src={prodCart.product.image} alt="" />
         </header>
         <section>
             <h3>{prodCart.product.title}</h3>

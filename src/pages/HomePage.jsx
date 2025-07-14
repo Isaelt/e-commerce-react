@@ -50,8 +50,8 @@ const HomePage = () => {
        <FilterPrice 
        setFromTo={setFromTo}
        />
-       <FilterCategory
-      />
+       {/* <FilterCategory
+      /> */}
         </div>
         <div className="home__container-products">
             {

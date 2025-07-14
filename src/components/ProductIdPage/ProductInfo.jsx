@@ -18,11 +18,12 @@ const ProductInfo = ({product}) => {
     const {addProductInCart} = useCartApi()
 
     const handleAddCart = () =>{
-      const data = {
-        quantity: counter,
-        productId: product.id
-      }
-      addProductInCart(data)
+      // const data = {
+      //   quantity: counter,
+      //   products: idproduct.id
+      // }
+      // const data = { userId: 1, products: [{ id: idproduct.id }] };
+      addProductInCart(product)
     }
 
 

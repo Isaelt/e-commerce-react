@@ -4,7 +4,7 @@ const useAuth = () => {
   
 
     const createUser = (data, navigate) => {
-        const url = 'https://e-commerce-api-v2.academlo.tech/api/v1/users'
+        const url = ''
         axios.post(url, data)
           .then(res => {
             console.log(res.data)
@@ -14,7 +14,7 @@ const useAuth = () => {
     }
 
     const loginUser = (data, navigate) => {
-        const url = 'https://e-commerce-api-v2.academlo.tech/api/v1/users/login'
+        const url = ''
         axios.post(url, data)
           .then(res => {
             console.log(res.data)
